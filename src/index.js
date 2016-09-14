@@ -1,20 +1,30 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import YTSearch from 'youtube-api-search'
-
 import SearchBar from './components/search_bar';
+import VideoList from './components/video_listing'
 
-//youtube api key
 const API_KEY = 'AIzaSyD5xvfApufMY8RookM595n4WCfGuDUaxH8'
 
-//Functional based component
-// Functional based component can contain a class based component.
-const App = () => {
-    return(
-        <div>
+
+class App extends Component {
+
+    constructor(props){
+        super(props);
+        this.state = { videos: [] };
+
+        YTSearch({key: API_KEY, term: 'surfboards'}, (videos) => {
+            this.setState({ videos });
+        });
+    }
+    render(){
+        return(
+            <div>
             <SearchBar />
-        </div>
-    );
+            <VideoList videos={this.state.videos} />
+            </div>
+        );
+    }
 }
 
 ReactDOM.render(<App />, document.querySelector('.root'));
