@@ -1,21 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Search from './components/search_bar';
+import SearchBar from './components/search_bar';
 
-class MyApp extends React.Component{
+//youtube api key
+const API_KEY = 'AIzaSyD5xvfApufMY8RookM595n4WCfGuDUaxH8'
 
-componentWillMount(){
-    console.log('i am mounting my self.');
-}
+class App extends React.Component{
 
 render(){
     return (
         <div>
-        <Search />
+        <SearchBar />
         </div>
     );
 }
 }
 
-ReactDOM.render(<MyApp />, document.querySelector('.root'));
+ReactDOM.render(<App />, document.querySelector('.root'));
