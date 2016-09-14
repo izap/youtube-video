@@ -1,15 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Search from './components/search_component';
-/*()
-const MyApp = () => {
-    return (
-        <div>
-        <Search />
-        </div>
-    );
-}*/
+import Search from './components/search_bar';
 
 class MyApp extends React.Component{
 
