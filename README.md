@@ -18,4 +18,10 @@ var SearchBar = () => {
 11. Event handler is the function in the class that should be ran whenever the event occurs.
 12. We pass the event handlers to the element we want to monitor for events.
 13. Each class based component that we define has it's own state object. Whenever component state changed, component immidiatly rerendered. and also forces all of it's childerns to rerender as well.
-13. 
+14. On top of Redux, we have Webpack, Redux Router, React Router, Redux Promise, Redux thunk.
+15. Redux contains the state of the whole application.
+16. Redux is more about to control the data.
+17. In Redux, Reducer is just a function which returns the application state. Since one application can have many different pieces of states hence we can have many different reducers.
+18. An application state generates by the Reducer function.
+19. Redux servers to constuct an application state and react provides the view to display that state.
+20. Action creator is a function that return an action.
