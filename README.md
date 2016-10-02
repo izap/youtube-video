@@ -25,3 +25,5 @@ var SearchBar = () => {
 18. An application state generates by the Reducer function.
 19. Redux servers to constuct an application state and react provides the view to display that state.
 20. Action creator is a function that return an action.
+21. Action creator returns an object called action. and returned action automatically sent to all reducers.
+

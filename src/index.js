@@ -13,6 +13,7 @@ import VideoList from './components/video_listing';
 import VideoView from './components/video_view';
 
 import BookList from './containers/book-list';
+import BookDetail from './containers/book-detail';
 
 const API_KEY = 'AIzaSyD5xvfApufMY8RookM595n4WCfGuDUaxH8';
 
@@ -46,6 +47,7 @@ videoSearch(searchTerm) {
         return (
             <div>
             <BookList />
+            <BookDetail />
             <SearchBar onSearchTermChange={videoSearch} />
             <VideoView video={this.state.selectedVideo} />
             <VideoList 
