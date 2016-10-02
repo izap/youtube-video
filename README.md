@@ -26,4 +26,4 @@ var SearchBar = () => {
 19. Redux servers to constuct an application state and react provides the view to display that state.
 20. Action creator is a function that return an action.
 21. Action creator returns an object called action. and returned action automatically sent to all reducers.
-
+22. In redux State is an application state. Whereas in React state is the component state and both states are not connected in any way. Even redux should call their state variable something else.
