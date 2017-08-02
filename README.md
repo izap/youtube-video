@@ -1,5 +1,7 @@
-####React Best Practices
-1.  We always create one component per file. No matter how small it is.
+React Best Practices
+----
+
+1.  We always create one component per file. *No matter* how small it is.
 2.  Normaly we call React Components a functional component. because it literally a function. there is another type of component in React is Class Component. It use to some type of record keeping.
 
 ```javascript
